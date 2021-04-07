@@ -99,29 +99,29 @@ float alpha = 0.8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-  "#4e4e4e", 
-  "#d68787", 
-  "#5f865f",
-  "#d8af5f",
-  "#85add4",
-  "#d7afaf",
-  "#87afaf",
-  "#d0d0d0",
+  "#3B4252", 
+  "#BF616A", 
+  "#A3BE8C",
+  "#EBCB8B",
+  "#81A1C1",
+  "#B48EAD",
+  "#88C0D0",
+  "#E5E9F0",
 
 	/* 8 bright colors */
-  "#626262",
-  "#d75f87",
-  "#87af87",
-  "#ffd787", 
-  "#add4fb",
-  "#ffafaf",
-  "#87d7d7",
-  "#e4e4e4",
+  "#4C566A",
+  "#BF616A",
+  "#A3BE8C",
+  "#EBCB8B", 
+  "#81A1C1",
+  "#B48EAD",
+  "#8FBCBB",
+  "#ECEFF4",
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#d0d0d0",
+  "#E5E9F0",
 	"black",
 };
 
@@ -206,7 +206,7 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
 	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
 	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
-	{ ShiftMask,            XK_Return,      newterm,        {.i =  0} },
+	{ ControlMask,          XK_Return,      newterm,        {.i =  0} },
 };
 
 /*
