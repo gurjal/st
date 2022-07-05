@@ -31,7 +31,7 @@ static const char *colorname[] = {
   [15]  = "#acb0d0",
   [255] = 0,
   [256] = "#c0caf5", // foreground
-  [257] = "#16161e", // background
+  [257] = "#1a1b26", // background
 };
 
 unsigned int defaultfg = 256;

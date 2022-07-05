@@ -1,13 +1,13 @@
 /* See LICENSE file for copyright and license details. */
 
-#include "themes/nord.h"
+#include "themes/embark.h"
 
 /*
  * appearance
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrainsMono Nerd Font:style=Regular:pixelsize=18:antialias=true:hinting=true";
+static char *font = "JetBrainsMono Nerd Font:style=Regular:pixelsize=16:antialias=true:hinting=true";
 static int borderpx = 2;
 
 /*
@@ -170,6 +170,7 @@ static Shortcut shortcuts[] = {
 	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
 	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
 	{ ControlMask,          XK_Return,      newterm,        {.i =  0} },
+	{ MODKEY,               XK_Return,      newtermtab,     {.i =  0} },
 };
 
 /*
