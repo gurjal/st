@@ -30,13 +30,13 @@ static const char *colorname[] = {
   [14]  = "#85dc85",
   [15]  = "#e2637f",
   [255] = 0,
-  [256] = "#282a36",
-  [257] = "#f8f8f2",
-  [258] = "#080808",
-  [259] = "#eeeeee",
+  [256] = "#eeeeee",
+  [257] = "#080808",
+  [258] = "#b2ceee",
+  [259] = "#9e9e9e",
 };
 
-unsigned int defaultfg = 259;
-unsigned int defaultbg = 258;
-unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
+unsigned int defaultfg = 256;
+unsigned int defaultbg = 257;
+unsigned int defaultcs = 258;
+static unsigned int defaultrcs = 259;
