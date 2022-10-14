@@ -170,7 +170,7 @@ static Shortcut shortcuts[] = {
 	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
 	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
 	{ ControlMask,          XK_Return,      newterm,        {.i =  0} },
-	{ MODKEY,               XK_Return,      newtermtab,     {.i =  0} },
+	{ MODKEY|ControlMask,   XK_Return,      newtermtab,     {.i =  0} },
 };
 
 /*
