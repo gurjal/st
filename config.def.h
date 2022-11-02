@@ -1,11 +1,13 @@
 /* See LICENSE file for copyright and license details. */
 
+#include "themes/nord.h"
+
 /*
  * appearance
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+static char *font = "JetBrainsMono Nerd Font Mono:style=Regular:pixelsize=16:antialias=true:hinting=true";
 static int borderpx = 2;
 
 /*
@@ -93,47 +95,6 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
-/* Terminal colors (16 first used in escape sequence) */
-static const char *colorname[] = {
-	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
-
-	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
-
-	[255] = 0,
-
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
-	"gray90", /* default foreground colour */
-	"black", /* default background colour */
-};
-
-
-/*
- * Default colors (colorname index)
- * foreground, background, cursor, reverse cursor
- */
-unsigned int defaultfg = 258;
-unsigned int defaultbg = 259;
-unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
-
 /*
  * Default shape of cursor
  * 2: Block ("█")
@@ -146,9 +107,8 @@ static unsigned int cursorshape = 2;
 /*
  * Default columns and rows numbers
  */
-
-static unsigned int cols = 80;
-static unsigned int rows = 24;
+static unsigned int cols = 128;
+static unsigned int rows = 32;
 
 /*
  * Default colour and shape of the mouse cursor
@@ -205,7 +165,7 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
 	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
 	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
-	{ TERMMOD,              XK_Return,      newterm,        {.i =  0} },
+	{ ControlMask,          XK_Return,      newterm,        {.i =  0} },
 };
 
 /*
