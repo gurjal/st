@@ -1,6 +1,6 @@
 /* See LICENSE file for copyright and license details. */
 
-#include "themes/nord.h"
+#include "themes/tundra.h"
 
 /*
  * appearance
@@ -8,7 +8,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "JetBrainsMono Nerd Font Mono:style=Regular:pixelsize=16:antialias=true:hinting=true";
-static int borderpx = 2;
+static int borderpx = 0;
 
 /*
  * What program is execed by st depends of these precedence rules:
