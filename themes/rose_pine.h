@@ -1,5 +1,5 @@
 /*
- * st/themes/rose.h
+ * st/themes/rose_pine.h
  *
  * black
  * red
