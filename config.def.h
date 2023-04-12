@@ -1,13 +1,13 @@
 /* See LICENSE file for copyright and license details. */
 
-#include "themes/tundra.h"
+#include "themes/nord.h"
 
 /*
  * appearance
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Iosevka Nerd Font Mono:style=Regular:pixelsize=18:antialias=true";
+static char *font = "Iosevka Nerd Font Mono:style=Regular:pixelsize=18:antialias=true:hinting=true";
 static int borderpx = 0;
 
 /*
@@ -67,7 +67,7 @@ static unsigned int blinktimeout = 800;
 /*
  * thickness of underline and bar cursors
  */
-static unsigned int cursorthickness = 2;
+static unsigned int cursorthickness = 1;
 
 /*
  * bell volume. It must be a value between -100 and 100. Use 0 for disabling
