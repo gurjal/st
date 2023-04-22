@@ -1,6 +1,6 @@
 /* See LICENSE file for copyright and license details. */
 
-#include "themes/nord.h"
+#include "themes/catppuccin.h"
 
 /*
  * appearance
